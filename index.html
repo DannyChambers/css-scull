@@ -87,24 +87,32 @@
 			.canvas {
 				position: relative;
 				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 			}
 			.canvas .content {
+				padding-top: 75%;
+				/* background: pink; */
 				position: absolute;
-				top: 0;
+				top: 50%;
 				bottom: 0;
-				left: 0;
+				left: 50%;
 				right: 0;
-				height: 100vh;
-				display: flex;
-				justify-content: center;
-				align-items: center;
+				transform: translateX(-50%) translateY(-50%);
+				max-width: 1070px;
 			}
 
 			#skull {
-				height: 100vh;
-				aspect-ratio: 4 / 6;
+				/* display: none; */
+				position: absolute;
+				top: 0;
+				height: 90%;
+				width: 100%;
 				padding: 10%;
 			}
+
 			#skull #skull-dome {
 				width: 100%;
 				height: 70%;
